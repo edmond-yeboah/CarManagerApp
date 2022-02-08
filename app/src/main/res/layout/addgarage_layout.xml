@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="280dp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textSize="35sp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="30dp"
+        android:text="Add your garage info..."
+        android:fontFamily="@font/poppins_bold_italic" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/garagename"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:textColorHint="@color/black"
+        android:hint="Garage name"
+        app:hintTextColor="@color/black"
+        android:fontFamily="@font/poppins_light"
+        android:textStyle="bold"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textSize="18dp"
+        android:layout_marginTop="15dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:textColor="@color/black">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/openhours"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Open hours"
+            android:backgroundTint="@color/blue"/>
+
+        <TextView
+            android:id="@+id/closehours"
+            android:layout_width="126dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:layout_marginStart="0dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Close hours"
+            android:backgroundTint="@color/blue"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:visibility="gone"
+            android:text="Country"
+            android:textColor="#202020"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tvcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:text=""
+            android:textColor="#202020"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="left"
+            android:text="City"
+            android:visibility="gone"
+            android:textColor="#202020"
+            android:textSize="19dp" />
+
+        <TextView
+            android:id="@+id/tvcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            android:visibility="gone"
+            android:text=""
+            android:textColor="#202020"
+            android:textSize="19dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+<!--        <TextView-->
+<!--            android:id="@+id/address"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:gravity="left"-->
+<!--            android:visibility="gone"-->
+<!--            android:text="Address"-->
+<!--            android:textColor="#202020"-->
+<!--            android:textSize="19dp" />-->
+
+        <TextView
+            android:id="@+id/tvaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="false"
+            android:layout_alignParentEnd="true"
+            android:gravity="left"
+            android:text=""
+            android:visibility="gone"
+            android:textColor="#202020"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/blue"
+        android:background="@drawable/bg"
+        android:text="Get current location"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="19sp"
+        android:fontFamily="@font/poppins_light"/>
+
+    <LinearLayout
+        android:layout_width="260dp"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:id="@+id/cancelgarage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/teal_200"
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            android:text="cancel"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <View
+            android:id="@+id/secondview"
+            android:layout_width="2dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/color"
+            android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/addgarage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="20sp"
+            android:text="add garage"
+            android:layout_marginStart="10dp"
+            android:textAllCaps="true"
+            android:fontFamily="@font/poppins_bold"/>
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/aviaddgarage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:indicatorColor="@color/blue"
+        app:indicatorName="LineScalePulseOutRapidIndicator" />
+
+
+    <!--    <Button-->
+    <!--        android:layout_width="260dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:text="Add car"-->
+    <!--        android:textSize="18dp"-->
+    <!--        android:fontFamily="@font/poppins_bold"-->
+    <!--        android:textStyle="bold"-->
+    <!--        android:textColor="@color/white"-->
+    <!--        android:layout_marginTop="15dp"/>-->
+
+
+</LinearLayout>

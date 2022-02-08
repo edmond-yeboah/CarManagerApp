@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9"
+    android:background="@drawable/user_list_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="5dp"
+        android:layout_weight="1">
+
+        <!--        <androidx.appcompat.widget.Toolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:theme="@style/ToolBar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_height="?actionBarSize">-->
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/btsgaragename"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+        <!--       </androidx.appcompat.widget.Toolbar>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/recycler_bg">
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_light"
+                android:text="Name"
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/btsgaragenames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_alignParentEnd="true"
+                android:gravity="right"
+                android:fontFamily="@font/poppins_italic"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_light"
+                android:text="Opening time"
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/btsopentime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_italic"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_light"
+                android:text="Closing time"
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/btsclosetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_italic"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_light"
+                android:text="Address"
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/btsaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_italic"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="260dp"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp">-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:gravity="left"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:text="Car Color"-->
+<!--                android:textColor="#202020"-->
+<!--                android:textSize="19dp" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/btscarcolor"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerVertical="false"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:fontFamily="@font/poppins_italic"-->
+<!--                android:gravity="right"-->
+<!--                android:text=""-->
+<!--                android:textColor="#202020"-->
+<!--                android:textSize="19dp" />-->
+
+
+<!--        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="260dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="left"
+                android:fontFamily="@font/poppins_light"
+                android:text="Date"
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+            <TextView
+                android:id="@+id/btsdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="false"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppins_italic"
+                android:gravity="right"
+                android:text=""
+                android:textColor="#202020"
+                android:textSize="19dp" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <!--        <androidx.recyclerview.widget.RecyclerView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/recyclerview"-->
+        <!--            android:layout_marginTop="3dp"-->
+        <!--            android:layout_marginLeft="3dp"/>-->
+
+        <!--        <com.wang.avi.AVLoadingIndicatorView-->
+        <!--            android:id="@+id/listavi"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="15dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:visibility="visible"-->
+        <!--            app:indicatorName="BallPulseIndicator"-->
+        <!--            app:indicatorColor="@color/black"-->
+        <!--            />-->
+    </LinearLayout>
+
+</LinearLayout>
